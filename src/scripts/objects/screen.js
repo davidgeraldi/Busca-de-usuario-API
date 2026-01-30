@@ -33,7 +33,7 @@ const screen = {
 
         let eventsItens = '';
         user.events.forEach(event => {
-            if(event.type === "PushEvent" && event.payload.commits && event.payload.commits.length > 0){
+            if(event.type === 'PushEvent' && event.payload.commits && event.payload.commits.length > 0){
                 eventsItens += `<li><p class="repository">${event.repo.name} --> </p> <p class="message">${event.payload.commits[0].message}</p></li>`;
             }else{
                 eventsItens += `<li><p class="repository">${event.repo.name} --></p> <p>Sem commits para mostrar</p></li>`;
