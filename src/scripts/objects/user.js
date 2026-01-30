@@ -21,10 +21,6 @@ const user = {
     },
     setRepositories(repositories){
         this.repositories = repositories
-        this.forks = repositories.forks
-        this.watchers = repositories.watchers
-        this.language = repositories.language
-        this.stars = repositories.stargazers_count
     },
 
     setEvents(events){
