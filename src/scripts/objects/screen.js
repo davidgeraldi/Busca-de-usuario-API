@@ -1,3 +1,5 @@
+// import { eventsQuantity } from "../variables";
+
 const screen = {
     userProfile: document.querySelector('.profile-data'),
     renderUser(user){
@@ -33,10 +35,8 @@ const screen = {
 
         let eventsItens = '';
         user.events.forEach(event => {
-            if(event.type === 'PushEvent' && event.payload.commits && event.payload.commits.length > 0){
-                eventsItens += `<li><p class="repository">${event.repo.name} --> </p> <p class="message">${event.payload.commits[0].message}</p></li>`;
-            }else{
-                eventsItens += `<li><p class="repository">${event.repo.name} --></p> <p>Sem commits para mostrar</p></li>`;
+            if(event.type === 'PushEvent' || event.type === 'CreateEvent'){
+                eventsItens += `<li"><p class="repository">${event.repo.name} --> </p> <p class="message">${event.type}</p></li>`;
             }
             
         });
@@ -44,7 +44,7 @@ const screen = {
         if(user.events.length > 0) {
             this.userProfile.innerHTML += `<div class="events">
                                                 <h2>Eventos</h2>
-                                                <ul>${eventsItens}</ul>
+                                                <ul>${eventsItens.slice(0, 10)}</ul>
                                             </div>`;
         }
     },
