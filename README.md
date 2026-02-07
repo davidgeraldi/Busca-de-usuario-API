@@ -27,9 +27,9 @@ Tela inicial da página, para realizar a busca do usuário do GitHub.
 
 <img src="./src/design/tela_responsiva.png">
 
-## Conclusão do desafio
+## Conclusão do projeto
 
-Com as habilidades que adquiri no curso, até que consegui me sair bem, lembrei dos conceitos async/await; aprendi a separar as responsabilidades para deixar o código mais clean. 
+Com as habilidades que adquiri no curso, consegui desenvolver bem, utilizei os conceitos async/await; aprendi a separar as responsabilidades para deixar o código mais clean. 
 
 ## Tecnologias utilizadas:
 
