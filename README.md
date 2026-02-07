@@ -1,7 +1,7 @@
 # API do GitHub para busca de usuários
 
-## Sobre o desafio
-Quest de HTML, CSS e JS Avançados do curso DevQuest. Com as habilidades adquiridas durante o curso, foi realizado as 3 solicitações. 
+## Sobre o Projeto
+Durante o curso DevQuest, com os conhecimentos em HTML, CSS e JS.Desenvolvi o projeto em que foi realizado as 3 solicitações. 
 Primeira solicitação: Adicionar o número de seguidores e seguindo do usuário
 Segunda solicitação: Mostrar os últimos 10 eventos do usuário com seus respectivos commits
 Terceira solicitação: Adicionar além dos nomes dos repositórios, os dados de forks, stars, watchers e a linguagem do repositório.
